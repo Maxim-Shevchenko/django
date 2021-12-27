@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел на понедельник</title>
+</head>
+<body>
+
+<h1>Мой список дел на понедельник</h1>
+
+<ol>
+
+    {% for todo in todo_list %}
+        <li>{{todo}}</li>
+    {% endfor %}
+
+</ol>
+</body>
+<br>
+<a href="/">Вернуться</a>
+</html>
