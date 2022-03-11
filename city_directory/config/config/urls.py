@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from core.views import main
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', main),
+    path('moscow', main, name = 'Москва'),
+    path('piter', main, name = 'Санкт-Петербург'),
+    path('kursk', main, name = 'Курск'),
+    path('sevastopol', main, name = 'Севастополь'),
+    path('voronezh', main, name = 'Воронеж'),
+    path('krasnodar', main, name = 'Краснодар'),
+    path('saratov', main, name = 'Саратов')
 ]

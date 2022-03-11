@@ -1,0 +1,40 @@
+h1 {
+color: goldenrod;
+font-size: 40px;
+}
+
+body {
+background-color: #b03f00;
+ }
+
+p {
+font-size: 25px;
+}
+
+.menu {
+background-color: grey;
+width: 12%;
+height: 100%;
+position: absolute;
+padding: 3%;
+ }
+
+.main {
+width: 74%;
+margin-left: 20%;
+padding: 3%;
+ }
+
+.menu li {
+color: purple;
+font-size: 17px;
+width: 100%;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.menu a:hover {
+color: wheat;
+ }
