@@ -4,5 +4,9 @@ from django.shortcuts import render
 from django.shortcuts import render
 
 def main(request):
+    path = request.path
+    path = path.replace('/', '')
+    if path == "":
+        path = 'main'
     cities = ['Москва', 'Санкт-Петербург', 'Курск', 'Севастополь', 'Воронеж', 'Краснодар', 'Саратов']
-    return render(request, 'main.html', {'cities':cities})
+    return render(request, f'{path}.html', {'cities':cities})
