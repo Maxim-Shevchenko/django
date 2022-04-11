@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
+from phones.views import home
 from django.views.generic import TemplateView
-
+from phones.views import PhoneListView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='home.html'), name='home')
+    path('', PhoneListView.as_view(), name='home')
 ]
