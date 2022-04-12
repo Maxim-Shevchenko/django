@@ -21,9 +21,10 @@ Phone Shop
         <p class="phone-date">Дата последнего обновления записи: {{ phone.updated }}</p>
         <h3>Описание </h3> <p>{{ phone.description }}</p>
         <p>{{ phone.description | truncatewords:20 }}</p>
+         </div>
 {% endfor %}
 
-    </div>
+
 
 {% endblock content %}
 </body>
