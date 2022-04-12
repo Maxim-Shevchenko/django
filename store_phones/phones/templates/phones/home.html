@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Store Phones</title>
 </head>
 <body>
 {% extends 'base.html' %}
@@ -13,16 +13,17 @@ Phone Shop
 
 {% for phone in phone_list %}
     <div class="phone">
-        <h2>{{ phone.title }}</h2>
+        <h2><a href="{{ phone.get_absolute_url }}">{{ phone.title }}</a></h2>
         {% if phone.image %}
-        <img src="{{ phone.image.url }}">
+        <a href="{{ phone.get_absolute_url }}"><img src="{{ phone.image.url }}"></a>
         {% endif %}
-        <p>Смартфон добавлен пользователем {{ phone.owner }} {{ phone.created }}</p>
-        <p>Дата последнего обновления записи: {{ phone.updated }}</p>
+        <p class="phone-date">Смартфон добавлен пользователем {{ phone.owner }} {{ phone.created }}</p>
+        <p class="phone-date">Дата последнего обновления записи: {{ phone.updated }}</p>
         <h3>Описание </h3> <p>{{ phone.description }}</p>
+        <p>{{ phone.description | truncatewords:20 }}</p>
 {% endfor %}
 
-
+    </div>
 
 {% endblock content %}
 </body>

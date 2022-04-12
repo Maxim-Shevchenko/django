@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Store phones
+{% endblock title %}
+{% block content %}
+<h1 class="phone-detail-title-1">{{ phone.title }}</h1>
+<p class="price">Цена смартфона составляет {{ phone.price }}$</p>
+ {% if phone.image %}
+        <a href="{{ phone.get_absolute_url }}"><img src="{{ phone.image.url }}"></a>
+{% endif %}
+<h2 class="phone-detail-title-2">Информация о смартфоне</h2>
+<p class="phone-info">Смартфон добавлен пользователем {{ phone.owner }} {{ phone.created }}</p>
+<p class="phone-info">Дата последнего обновления записи: {{ phone.updated }}</p>
+<h2 class="phone-detail-title-2">Описание смартфона</h2>
+<p class="phone-detail-description">{{ phone.description }}</p>
+<h2 class="phone-detail-title-2">Комментарии к смартфону</h2>
+<p><a href="{% url 'home' %}">Вернуться на главную</a></p>
+{% endblock content %}

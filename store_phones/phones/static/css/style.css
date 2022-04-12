@@ -1,0 +1,58 @@
+body {
+background-color: aqua;
+margin-left: 20%;
+margin-right: 20%;
+}
+
+.phone {
+border: darkblue 5px solid;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 10px;
+background-color: LightSteelBlue;
+text-align: center;
+}
+
+img {
+width: 80%;
+height: 80%;
+}
+
+.phone h2 {
+border-bottom: violet 6px double;
+color: DarkBlue;
+}
+
+.phone h3 {
+color: Teal;
+}
+
+.phone-date {
+font-size: smaller;
+margin: 0;
+font-style: italic;
+}
+
+.phone a {
+text-decoration: none;
+color: darkviolet;
+}
+
+.phone-detail-title-1 {
+color: darkviolet;
+border-bottom: white 5px double;
+font-weight: normal;
+}
+
+.phone-detail-title-2 {
+color: darkgreen;
+border-bottom: greenyellow 3px solid;
+font-weight: normal;
+}
+
+.price {
+text-decoration: underline;
+font-weight: bold;
+color: magenta;
+}
