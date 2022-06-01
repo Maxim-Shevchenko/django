@@ -1,5 +1,6 @@
 body {
-background-color: aqua;
+background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614627687_2-p-fon-gradient-dlya-fotoshopa-2.jpg);
+background-size: 700%;
 margin-left: 20%;
 margin-right: 20%;
 }
@@ -40,19 +41,68 @@ color: darkviolet;
 }
 
 .phone-detail-title-1 {
-color: darkviolet;
+color: white;
 border-bottom: white 5px double;
 font-weight: normal;
 }
 
 .phone-detail-title-2 {
-color: darkgreen;
+color: yellow;
 border-bottom: greenyellow 3px solid;
 font-weight: normal;
 }
 
 .price {
-text-decoration: underline;
+font-size: 30px;
 font-weight: bold;
-color: magenta;
+color: red;
 }
+
+.login-form input[type=submit] {
+font-weight: bold;
+background-color: cornflowerblue;
+color: cornsilk;
+padding: 10px 20px;
+font-size: 20px;
+width: auto;
+}
+
+.login-form input, textarea {
+margin-bottom: 10px;
+background-color: ghostwhite;
+border: 0;
+padding: 6px 10px;
+font-size: 20px;
+width: 30%;
+}
+
+.login-heading {
+font-weight: normal;
+border-bottom: 1px solid grey;
+color: white;
+}
+
+.login-para {
+font-size: 20px;
+font-weight: bold;
+color: white;
+}
+
+.nav h1 {
+font-weight: normal;
+color: white;
+display: inline;
+}
+
+.login-logout-reg-nav {
+float: right;
+text-align: right;
+}
+
+.login-logout-reg-nav a {
+text-decoration: none;
+color: darkblue;
+}
+
+
+

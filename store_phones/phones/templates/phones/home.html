@@ -10,7 +10,17 @@
 Phone Shop
 {% endblock title %}
 {% block content %}
+<div class="nav">
 
+<h1>Store phones</h1>
+    <div class="login-logout-reg-nav">
+        {% if user.is_authenticated %}
+        Добро пожаловать, {{ user }}
+        <br><a href="{% url 'logout' %}">Выйти из аккаунта</a>
+        {% else %}
+         <a href="{% url 'login' %}">Войти на сайт</a>
+        {% endif %}
+    </div>
 {% for phone in phone_list %}
     <div class="phone">
         <h2><a href="{{ phone.get_absolute_url }}">{{ phone.title }}</a></h2>
