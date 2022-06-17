@@ -31,14 +31,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'phones.apps.PhonesConfig',
+    'accounts.apps.AccountsConfig',
+
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'phones.apps.PhonesConfig',
-    'accounts.apps.AccountsConfig',
+
 ]
 
 MIDDLEWARE = [

@@ -16,8 +16,8 @@ text-align: center;
 }
 
 img {
-width: 80%;
-height: 80%;
+width: 200px;
+height: 200px;
 }
 
 .phone h2 {
@@ -58,7 +58,7 @@ font-weight: bold;
 color: red;
 }
 
-.login-form input[type=submit] {
+.login-form input[type=submit], .signup-form input[type=submit], .password-change-form input[type=submit]  {
 font-weight: bold;
 background-color: cornflowerblue;
 color: cornsilk;
@@ -67,7 +67,7 @@ font-size: 20px;
 width: auto;
 }
 
-.login-form input, textarea {
+.login-form input, textarea, .signup-form input, .password-change-form input  {
 margin-bottom: 10px;
 background-color: ghostwhite;
 border: 0;
@@ -76,13 +76,18 @@ font-size: 20px;
 width: 30%;
 }
 
-.login-heading {
+.login-heading, .signup-heading, .password-change-heading {
 font-weight: normal;
 border-bottom: 1px solid grey;
 color: white;
 }
 
-.login-para {
+.signup-heading, .password-change-para {
+font-weight: normal;
+border-bottom: 1px solid grey;
+color: white;
+}
+.login-para, .signup-para {
 font-size: 20px;
 font-weight: bold;
 color: white;
@@ -101,8 +106,13 @@ text-align: right;
 
 .login-logout-reg-nav a {
 text-decoration: none;
-color: darkblue;
+color: white;
 }
+
+.id_username {
+color: white;
+}
+
 
 
 

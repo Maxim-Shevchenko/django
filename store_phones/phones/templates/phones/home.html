@@ -18,7 +18,8 @@ Phone Shop
         Добро пожаловать, {{ user }}
         <br><a href="{% url 'logout' %}">Выйти из аккаунта</a>
         {% else %}
-         <a href="{% url 'login' %}">Войти на сайт</a>
+         <a href="{% url 'login' %}">Войти на сайт</a><br>
+         <a href="{% url 'sign_up' %}">Зарегистироваться</a>
         {% endif %}
     </div>
 {% for phone in phone_list %}
