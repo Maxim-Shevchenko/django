@@ -5,6 +5,7 @@
 {% if form.errors %}
 <p class="login-para">Имя пользователя или пароль введены неправильно</p>
 
+   <a href="{% url 'password_change_form' %}">Сменить пароль</a>
 {% else %}
 <p class="login-para">Используйте следующую форму для входа на сайт:</p>
 {% endif %}
@@ -14,10 +15,14 @@
     {{ form.as_p }}
     <p><input type="submit" value="Войти на сайт"></p>
 
+
 </form>
+
 </div>
 
+<p class="login-para">Забыли пароль? Его можно <a href="{% url 'password_reset' %}">восстановить здесь</a></p>
 
+<p class="login-para">Поменять пароль на новый <a href="{% url 'password_change' %}">можно здесь</a></p>
 
 
 {% endblock content %}

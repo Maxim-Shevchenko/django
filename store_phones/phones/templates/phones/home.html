@@ -20,6 +20,8 @@ Phone Shop
         {% else %}
          <a href="{% url 'login' %}">Войти на сайт</a><br>
          <a href="{% url 'sign_up' %}">Зарегистироваться</a>
+
+
         {% endif %}
     </div>
 {% for phone in phone_list %}
